@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"ble_uart2\startup_stm32f103xb.o"
+"ble_uart2\main.o"
+"ble_uart2\gpio.o"
+"ble_uart2\usart.o"
+"ble_uart2\stm32f1xx_it.o"
+"ble_uart2\stm32f1xx_hal_msp.o"
+"ble_uart2\stm32f1xx_hal_gpio_ex.o"
+"ble_uart2\stm32f1xx_hal_uart.o"
+"ble_uart2\stm32f1xx_hal.o"
+"ble_uart2\stm32f1xx_hal_rcc.o"
+"ble_uart2\stm32f1xx_hal_rcc_ex.o"
+"ble_uart2\stm32f1xx_hal_gpio.o"
+"ble_uart2\stm32f1xx_hal_dma.o"
+"ble_uart2\stm32f1xx_hal_cortex.o"
+"ble_uart2\stm32f1xx_hal_pwr.o"
+"ble_uart2\stm32f1xx_hal_flash.o"
+"ble_uart2\stm32f1xx_hal_flash_ex.o"
+"ble_uart2\stm32f1xx_hal_exti.o"
+"ble_uart2\system_stm32f1xx.o"
+--strict --scatter "BLE_UART2\BLE_UART2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BLE_UART2.map" -o BLE_UART2\BLE_UART2.axf
